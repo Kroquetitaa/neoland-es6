@@ -23,3 +23,14 @@ const pointsLis2 = [54,87,99,65,32];
 
 const copyPoints = [...pointsList1, ...pointsLis2];
 console.log( copyPoints );
+
+// 3.4 Dado los siguientes objetos. Crea un nuevo objeto fusionando los dos 
+// con spread operators.
+// const toy = {name: 'Bus laiyiar', date: '20-30-1995', color: 'multicolor'};
+// const toyUpdate = {lights: 'rgb', power: ['Volar like a dragon', 'MoonWalk']}
+
+const toy1 = {name: 'Bus laiyiar', date: '20-30-1995', color: 'multicolor'};
+const toyUpdate = {lights: 'rgb', power: ['Volar like a dragon', 'MoonWalk']}
+
+const copyToys = {...toy1, ...toyUpdate};
+console.log( copyToys );
