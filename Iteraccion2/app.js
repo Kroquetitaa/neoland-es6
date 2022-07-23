@@ -17,3 +17,16 @@ const fruits = ['Banana', 'Strawberry', 'Orange'];
 
 const [fruit1, fruit2, fruit3 ] = fruits;
 console.log( fruits );
+
+// 2.3 En base al siguiente javascript, usa destructuring para crear 2 
+// variables igualandolo a la función e imprimiendolo por consola.
+
+// const animalFunction = () => {
+//     return {name: 'Bengal Tiger', race: 'Tiger'}
+// };
+
+const animalFunction = ( {} ) => {
+    return {name: 'Bengal Tiger', race: 'Tiger'}
+};
+
+console.log( animalFunction({}) );
