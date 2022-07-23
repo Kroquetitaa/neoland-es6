@@ -61,6 +61,26 @@ const users = [
  	{id:4, name: 'Amanda'}
 ];
 
-let users2 = users.map( values => values.name );
-console.log( users2 );
+let newUsers = users.map( values => values.name );
+console.log( newUsers );
+
+// 4.2 Dado el siguiente array, devuelve una lista que contenga los valores 
+// de la propiedad .name y cambia el nombre a 'Anacleto' en caso de que 
+// empiece por 'A'.
+// const users = [
+// 	{id: 1, name: 'Abel'},
+// 	{id:2, name: 'Julia'},
+// 	{id:3, name: 'Pedro'},
+// 	{id:4, name: 'Amanda'}
+// ];
+
+const users3 = [
+	{id: 1, name: 'Abel'},
+	{id:2, name: 'Julia'},
+	{id:3, name: 'Pedro'},
+	{id:4, name: 'Amanda'}
+];
+
+const newList = users3.map( value => ( value.name.startsWith('a'.toUpperCase()) ) ? 'Anacleto' : value.name );
+console.log( newList );
 
