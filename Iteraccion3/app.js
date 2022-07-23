@@ -12,3 +12,14 @@ console.log( copiaPointsList );
 const toy = {name: 'Bus laiyiar', date: '20-30-1995', color: 'multicolor'};
 const copyToy = {...toy};
 console.log( copyToy );
+
+// 3.3 Dado los siguientes arrays, crea un nuevo array juntandolos usando 
+// spread operatos.
+// const pointsList = [32, 54, 21, 64, 75, 43];
+// const pointsLis2 = [54,87,99,65,32];
+
+const pointsList1 = [32, 54, 21, 64, 75, 43];
+const pointsLis2 = [54,87,99,65,32];
+
+const copyPoints = [...pointsList1, ...pointsLis2];
+console.log( copyPoints );
