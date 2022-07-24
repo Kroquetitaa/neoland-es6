@@ -28,7 +28,14 @@ const exams = [
 ];
 
 const totalSum = exams.filter( ({score}) => score ).reduce( (previousValue, currentValue) => { return previousValue + currentValue.score},0);
-console.log( totalSum ); 
+
 // 7.2 Dado el mismo array, haz una suma de todos las notas de los examenes de los 
 // alumnos que esten aprobados usando la función .reduce().
-console.log( exams.filter( ({score}) => score >= 5 ).reduce( (previousValue, currentValue) => { return previousValue + currentValue.score},0) );
+
+//console.log( exams.filter( ({score}) => score >= 5 ).reduce( (previousValue, currentValue) => { return previousValue + currentValue.score},0) );
+
+// 7.3 Dado el mismo array, haz la media de las notas de todos los examenes .reduce().
+
+
+const totalSum2 = exams.filter( ({score}) => score ).reduce( (previousValue, currentValue) => { return (previousValue + currentValue.score) },0);
+console.log( totalSum2 / exams.length );
