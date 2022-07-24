@@ -1,7 +1,8 @@
-// 5.6 Dado el siguiente html y javascript, utiliza .filter() para mostrar por consola 
+// 5.7 Dado el siguiente html y javascript, utiliza .filter() para mostrar por consola 
 // los streamers que incluyan la palabra introducida en el input. De esta forma, si 
-// introduzco 'Ru' me deberia de mostrar solo el streamer 'Rubius'. Si
-// introduzco 'i', me deberia de mostrar el streamer 'Rubius' e 'Ibai'.
+// introduzco 'Ru' me deberia de mostrar solo el streamer 'Rubius'. Si introduzco 'i', 
+// me deberia de mostrar el streamer 'Rubius' e 'Ibai'.
+// En este caso, muestra solo los streamers filtrados cuando hagamos click en el button.
 // const streamers = [
 // 	{name: 'Rubius', age: 32, gameMorePlayed: 'Minecraft'},
 // 	{name: 'Ibai', age: 25, gameMorePlayed: 'League of Legends'},
@@ -10,7 +11,8 @@
 // ];
 
 let input = document.querySelector('input');
-console.log( input );
+let button = document.querySelector('button');
+console.log( button );
 
 const streamers = [
 	{name: 'Rubius', age: 32, gameMorePlayed: 'Minecraft'},
@@ -19,8 +21,7 @@ const streamers = [
 	{name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
 ];
 
-console.log( streamers );
-
 const searchWords = () => {
 	console.log( streamers.filter( value => (value.name.includes( input.value )) ? value.name : '' ) );
 }
+
